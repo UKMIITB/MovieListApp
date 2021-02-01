@@ -1,6 +1,7 @@
 package com.example.movielistassignment.activities;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -69,8 +70,11 @@ public class MainActivity extends AppCompatActivity implements ItemClickListener
     @Override
     public void onItemClicked(View view, int position) {
         Movie movieClicked = movieArrayList.get(position);
-        showToast(getApplicationContext(), movieClicked.getTitle());
+        //showToast(getApplicationContext(), movieClicked.getTitle());
 
+        Intent detailedActivityIntent = new Intent(this, DetailedActivity.class);
+        detailedActivityIntent.putExtra("Movie", movieClicked);
+        startActivity(detailedActivityIntent);
     }
 
     private void showToast(Context context, String message) {

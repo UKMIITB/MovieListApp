@@ -1,8 +1,15 @@
 package com.example.movielistassignment.model;
 
+import androidx.annotation.NonNull;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
 import java.io.Serializable;
 
+@Entity(tableName = "MovieDB")
 public class Movie implements Serializable {
+    @PrimaryKey
+    @NonNull
     private String title;
     private String overview;
     private double vote_average;

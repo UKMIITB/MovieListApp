@@ -15,3 +15,9 @@ In this project following concepts have been used and implemented:
 Order of images appearing are:
 Movie List Page -> Detailed Page
 
+![ezgif com-gif-to-mp4-3](https://user-images.githubusercontent.com/36126610/115078088-b638ab80-9f1c-11eb-90ff-8f3b8dc31871.gif)
+
+# Demo of App
+
+
+https://user-images.githubusercontent.com/36126610/115078267-031c8200-9f1d-11eb-82a3-ab2229a3d9cd.mp4
